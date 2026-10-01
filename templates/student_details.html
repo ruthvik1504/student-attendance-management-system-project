@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}
+Student Details - Attendance Management System
+{% endblock %}
+
+{% block content %}
+
+<h1>Student Details</h1>
+
+<h2>{{ student["name"] }}</h2>
+
+<p>
+    <strong>Roll No:</strong>
+    {{ student["roll_no"] }}
+</p>
+
+<p>
+    <strong>Email:</strong>
+    {{ student["email"] }}
+</p>
+
+<p>
+    <strong>Course:</strong>
+    {{ student["course"] }}
+</p>
+
+<p>
+    <strong>Branch:</strong>
+    {{ student["branch"] }}
+</p>
+
+<hr>
+
+<h2>Attendance Summary</h2>
+
+<div class="dashboard">
+
+    <div class="card">
+        <h3>Total Classes</h3>
+        <p>{{ total_classes }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Present</h3>
+        <p>{{ present_classes }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Absent</h3>
+        <p>{{ absent_classes }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Attendance</h3>
+        <p>{{ attendance_percentage }}%</p>
+    </div>
+
+</div>
+
+{% endblock %}

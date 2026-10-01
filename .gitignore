@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.venv/
+
+# IDE
+.vscode/
+
+# Database backup
+database/attendance backup.db
+
+# Environment files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
